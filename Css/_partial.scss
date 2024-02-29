@@ -1,0 +1,25 @@
+/*variabler*/
+$primary-color: white;
+$secondary-color: #3E8F22;
+$tertiery-color: #67AEB3;
+$quaternary-color: #FFA800;
+$quinary-color: #4B330F;
+$link-and-btn-font: 'big shoulder display';
+$headline-font: 'big shoulder inline text';
+$quote-font: 'just me again down here';
+$main-font: 'voltaire';
+
+
+/*mixin*/
+@mixin flex($justify: center, $align: center){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin btn($bg-color: $quinary-color){
+    background-color: $bg-color;
+    color: $primary-color;
+    text-decoration: none;
+    text-align: center;
+}

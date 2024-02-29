@@ -1,0 +1,41 @@
+@use 'partial';
+
+/*table of contents*/
+
+
+/*general*/
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    grid-template-rows: 200px auto 200px;
+    
+}
+/*general classes*/
+
+/*header*/
+header{
+    grid-area: header;
+}
+
+green-box{
+    background-color: $secondary-color;
+}
+
+/*main*/
+main{
+    grid-area: main;
+}
+
+/*footer*/
+footer{
+    grid-area: footer;
+}
