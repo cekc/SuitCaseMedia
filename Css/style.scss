@@ -1,35 +1,90 @@
 @use 'partial';
 
-/*table of contents*/
-
-
-/*general*/
+/*3.general*/
 *{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
 
+/*3.1.general classes*/
+.links{
+    font-family: partial.$link-and-btn-font;
+    font-size: 2.8vw;
+    color: partial.$primary-color;
+    text-decoration: none;
+    &:hover{
+        text-transform: uppercase;
+    }
+}
+/*4.body*/
 body{
     display: grid;
     grid-template-areas: 
     'header'
     'main'
     'footer';
-    grid-template-rows: 200px auto 200px;
-    
+    grid-template-rows: auto auto 200px; 
 }
-/*general classes*/
 
-/*header*/
+/*4.1.header over menu*/
 header{
     grid-area: header;
 }
 
+.header-boxes{
+    display: block;
+    position: relative;
+}
 green-box{
-    background-color: $secondary-color;
+    background-color: partial.$secondary-color;
+    width: auto;
+    height: 20vw;
 }
 
+blue-box{
+    background-color: partial.$tertiery-color;
+    width: 73vw;
+    height: 80%;
+    top: 20%;
+    left: 5vw;
+}
+
+orange-box{
+    background-color: partial.$quaternary-color;
+    width: 48vw;
+    height: 80%;
+    top: 20%;
+    left: 20vw;
+}
+
+white-box{
+    background-color: partial.$primary-color;
+    width: 22.5vw;
+    height: 80%;
+    left: 5vw;
+    img{
+        width: 11vw;
+        height: auto;
+        position: relative;
+        left: 8vw;
+    }
+}
+/*header menu*/
+nav{
+    @include partial.flex($justify: none);
+    background-color: partial.$quinary-color;
+    width: 100vw;
+    height: 4vw;
+    position: relative;
+    top: 20vw;
+    padding-left: 24vw;
+    a{
+        width: 8vw;
+        margin-right: 6vw;
+        text-align: center;
+    }
+}
 /*main*/
 main{
     grid-area: main;

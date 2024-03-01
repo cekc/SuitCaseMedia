@@ -1,9 +1,100 @@
-/*variabler*/
-/*mixin*/
 /*table of contents*/
-/*general*/
+/*1.variabler-partial*/
+/*2.mixin-partial*/
+/*3.general*/
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+}
+
+/*3.1.general classes*/
+.links {
+  font-family: "Big Shoulders Display";
+  font-size: 2.8vw;
+  color: white;
+  text-decoration: none;
+}
+.links:hover {
+  text-transform: uppercase;
+}
+
+/*4.body*/
+body {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: auto auto 200px;
+}
+
+/*4.1.header over menu*/
+header {
+  grid-area: header;
+}
+
+.header-boxes {
+  display: block;
+  position: relative;
+}
+
+green-box {
+  background-color: #3E8F22;
+  width: auto;
+  height: 20vw;
+}
+
+blue-box {
+  background-color: #67AEB3;
+  width: 73vw;
+  height: 80%;
+  top: 20%;
+  left: 5vw;
+}
+
+orange-box {
+  background-color: #FFA800;
+  width: 48vw;
+  height: 80%;
+  top: 20%;
+  left: 20vw;
+}
+
+white-box {
+  background-color: white;
+  width: 22.5vw;
+  height: 80%;
+  left: 5vw;
+}
+white-box img {
+  width: 11vw;
+  height: auto;
+  position: relative;
+  left: 8vw;
+}
+
+/*header menu*/
+nav {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  background-color: #4B330F;
+  width: 100vw;
+  height: 4vw;
+  position: relative;
+  top: 20vw;
+  padding-left: 24vw;
+}
+nav a {
+  width: 8vw;
+  margin-right: 6vw;
+  text-align: center;
+}
+
+/*main*/
+main {
+  grid-area: main;
+}
+
+/*footer*/
+footer {
+  grid-area: footer;
 }/*# sourceMappingURL=style.css.map */

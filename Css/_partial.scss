@@ -1,16 +1,18 @@
-/*variabler*/
+/*table of contents*/
+
+/*1.variabler-partial*/
 $primary-color: white;
 $secondary-color: #3E8F22;
 $tertiery-color: #67AEB3;
 $quaternary-color: #FFA800;
 $quinary-color: #4B330F;
-$link-and-btn-font: 'big shoulder display';
-$headline-font: 'big shoulder inline text';
-$quote-font: 'just me again down here';
-$main-font: 'voltaire';
+$link-and-btn-font: 'Big Shoulders Display';
+$headline-font: 'Big Shoulders Inline Text';
+$quote-font: 'Just Me Again Down Here';
+$main-font: 'Voltaire';
 
 
-/*mixin*/
+/*2.mixin-partial*/
 @mixin flex($justify: center, $align: center){
     display: flex;
     justify-content: $justify;
