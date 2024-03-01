@@ -15,6 +15,10 @@
   color: white;
   text-decoration: none;
 }
+.links:active {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
 .links:hover {
   text-transform: uppercase;
 }
@@ -23,7 +27,7 @@
 body {
   display: grid;
   grid-template-areas: "header" "main" "footer";
-  grid-template-rows: auto auto 200px;
+  grid-template-rows: auto auto auto;
 }
 
 /*4.1.header over menu*/
@@ -87,6 +91,29 @@ nav a {
   width: 8vw;
   margin-right: 6vw;
   text-align: center;
+}
+
+quote-box {
+  background-color: #FFA800;
+  font-family: "Just Me Again Down Here";
+  font-size: 2.7vw;
+  position: relative;
+  width: 48vw;
+  height: auto;
+  top: 24vw;
+  left: 25vw;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+quote-box q {
+  display: inline-block;
+  width: 100%;
+  padding: 2vw 3vw 0 3vw;
+}
+quote-box p {
+  margin-right: 1vw;
 }
 
 /*main*/
