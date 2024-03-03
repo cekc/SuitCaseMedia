@@ -59,7 +59,7 @@ orange-box {
   width: 48vw;
   height: 80%;
   top: 20%;
-  left: 20vw;
+  left: 18.5vw;
 }
 
 white-box {
@@ -84,8 +84,7 @@ nav {
   width: 100vw;
   height: 4vw;
   position: relative;
-  top: 20vw;
-  padding-left: 24vw;
+  padding-left: 22.5vw;
 }
 nav a {
   width: 8vw;
@@ -93,6 +92,7 @@ nav a {
   text-align: center;
 }
 
+/*header under menu*/
 quote-box {
   background-color: #FFA800;
   font-family: "Just Me Again Down Here";
@@ -100,20 +100,43 @@ quote-box {
   position: relative;
   width: 48vw;
   height: auto;
-  top: 24vw;
-  left: 25vw;
+  left: 23.5vw;
   display: flex;
   justify-content: end;
   align-items: center;
   flex-wrap: wrap;
+  z-index: 1;
 }
 quote-box q {
-  display: inline-block;
   width: 100%;
   padding: 2vw 3vw 0 3vw;
 }
 quote-box p {
   margin-right: 1vw;
+}
+
+language-box {
+  background-color: #67AEB3;
+  font-family: "Big Shoulders Display";
+  color: white;
+  font-size: 2.8vw;
+  position: relative;
+  width: 73vw;
+  height: auto;
+  left: 5vw;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+language-box p {
+  padding: 1vw 0vw;
+  margin-right: 0.5vw;
+}
+language-box a {
+  text-decoration: none;
+}
+language-box a:visited {
+  color: white;
 }
 
 /*main*/

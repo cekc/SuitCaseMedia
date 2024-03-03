@@ -59,7 +59,7 @@ orange-box{
     width: 48vw;
     height: 80%;
     top: 20%;
-    left: 20vw;
+    left: 18.5vw;
 }
 
 white-box{
@@ -81,14 +81,14 @@ nav{
     width: 100vw;
     height: 4vw;
     position: relative;
-    top: 20vw;
-    padding-left: 24vw;
+    padding-left: 22.5vw;
     a{
         width: 8vw;
         margin-right: 6vw;
         text-align: center;
     }
 }
+/*header under menu*/
 quote-box{
     background-color: partial.$quaternary-color;
     font-family: partial.$quote-font;
@@ -96,17 +96,37 @@ quote-box{
     position: relative;
     width: 48vw;
     height: auto;
-    top: 24vw;
-    left: 25vw;
+    left: 23.5vw;
     @include partial.flex($justify: end);
     flex-wrap: wrap;
     q{
-        display: inline-block;
         width: 100%;
         padding: 2vw 3vw 0 3vw;
     }
     p{
         margin-right: 1vw;
+    }
+    z-index: 1;
+}
+language-box{
+    background-color: partial.$tertiery-color;
+    font-family: partial.$link-and-btn-font;
+    color: partial.$primary-color;
+    font-size: 2.8vw;
+    position: relative;
+    width: 73vw;
+    height: auto;
+    left: 5vw;
+    @include partial.flex($justify: end);
+    p{
+        padding: 1vw 0vw;
+        margin-right: 0.5vw;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:visited{
+        color: partial.$primary-color
     }
 }
 /*main*/
