@@ -18,46 +18,77 @@
     <title>forside</title>
 </head>
 <body>
-    <!--header over menu - logo og grafik-->
+    <!--header-->
     <header>
-        <green-box class="header-boxes">
-            <blue-box class="header-boxes">
-                <orange-box class="header-boxes">
+        <!--logo og grafik-->
+        <green-box class="green header-boxes">
+            <blue-box class="blue header-boxes">
+                <orange-box class="orange header-boxes">
                     <white-box class="header-boxes"> 
                         <img src="Grafik/grafik_logo.svg" alt="logo">
                     </white-box> 
                 </orange-box>
             </blue-box>
         </green-box>     
-    <!--header navigation-->     
+    <!--navigation-->     
         <nav>
             <a class="links" href="#">forside</a>
             <a class="links" href="#">cases</a>
             <a class="links" href="#">produkter</a>
             <a class="links" href="#">om os</a>
         </nav>
-    <!--header under menu - citat og sprog-->
-        <language-box>
-            <a href=""><p>da</p></a><p>|</p><a href=""><p>en</p></a>
+    <!--sprogvalg og citat-->
+        <language-box class="blue">
+            <a class="links" href="#"><p>da</p></a>
+            <p>|</p>
+            <a class="links" href="#"><p>en</p></a>
         </language-box>
-        <quote-box>
+        <quote-box class="orange">
             <q>The only thing worse than being talked about is not being talked about.</q>
             <p aria-label="citat forfatter">-Oscar Wilde</p>
         </quote-box>       
     </header>
     <main>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ipsam molestias fugit similique expedita quas praesentium iste ullam eaque voluptas neque excepturi temporibus deleniti nihil porro, facilis explicabo sequi itaqueLorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ipsam molestias fugit similique expedita quas praesentium iste ullam eaque voluptas neque excepturi temporibus deleniti nihil porro, facilis explicabo sequi itaqueLorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ipsam molestias fugit similique expedita quas praesentium iste ullam eaque voluptas neque excepturi temporibus deleniti nihil porro, facilis explicabo sequi itaqueLorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ipsam molestias fugit similique expedita quas praesentium iste ullam eaque voluptas neque excepturi temporibus deleniti nihil porro, facilis explicabo sequi itaqueLorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ipsam molestias fugit similique expedita quas praesentium iste ullam eaque voluptas neque excepturi temporibus deleniti nihil porro, facilis explicabo sequi itaqueLorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ipsam molestias fugit similique expedita quas praesentium iste ullam eaque voluptas neque excepturi temporibus deleniti nihil porro, facilis explicabo sequi itaqueLorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ipsam molestias fugit similique expedita quas praesentium iste ullam eaque voluptas neque excepturi temporibus deleniti nihil porro, facilis explicabo sequi itaqueLorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ipsam molestias fugit similique expedita quas praesentium iste ullam eaque voluptas neque excepturi temporibus deleniti nihil porro, facilis explicabo sequi itaqueLorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ipsam molestias fugit similique expedita quas praesentium iste ullam eaque voluptas neque excepturi temporibus deleniti nihil porro, facilis explicabo sequi itaqueLorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ipsam molestias fugit similique expedita quas praesentium iste ullam eaque voluptas neque excepturi temporibus deleniti nihil porro, facilis explicabo sequi itaqueLorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ipsam molestias fugit similique expedita quas praesentium iste ullam eaque voluptas neque excepturi temporibus deleniti nihil porro, facilis explicabo sequi itaqueLorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ipsam molestias fugit similique expedita quas praesentium iste ullam eaque voluptas neque excepturi temporibus deleniti nihil porro, facilis explicabo sequi itaque
-        </p>
-    </main>
-    <footer>
-
-    </footer>
-    <footer>
-        <p>CVR 1029384756</p>
-        <some-box>
+        <section class="1-column">
             
-        </some-box>
-    </footer>
-    
+        </section>
+    </main>
+    <!--footer-->
+    <footer>               
+        <img class="person-grafik" src="Grafik/grafik_anna_karakter.svg" alt="pyntegrafik">
+        <h2>HVIS DU VIL HØRE MERE...</h2>
+        <!--kontaktinfo-->
+        <contact-box class="orange">
+            <h3>KONTAKT OS</h3>
+            <div>
+                <img src="Grafik/icon_call.svg" class="icon" alt="telefonnummer">
+                <p>10 29 38 47</p>
+            </div>
+            <div>
+                <img src="Grafik/icon_mail.svg" class="icon" alt="email">
+                <p>scmkontakt@suitcasemedia.dk</p>
+            </div>
+        </contact-box>
+        <!--tilmelding til nyhedsbrev-->
+        <newsletter-box class="blue">          
+            <form action="">
+                <h3>TILMELD VORES NYHEDSBREV</h3>
+                <label for="newsletter-text" class="lab-hidden">E-mail</label>
+                <input type="email" id="newsletter-text" placeholder="E-mail">
+                <input type="submit" id="submit-button" value="TILMELD">
+            </form>
+        </newsletter-box>
+        <!--bundbanner med cvr og SoMe-->
+        <bottom-box class="green">
+            <p>CVR 1029384756</p>
+            <some-box>
+                <h3>FØLG OS</h3>
+                <a><img src="Grafik/icon_LinkedIn.svg" class="icon" alt="linkedin-icon"></a>
+                <a><img src="Grafik/icon_Facebook.svg" class="icon" alt="facebook-icon"></a>
+                <a><img src="Grafik/icon_Instagram.svg" class="icon" alt="instagram-icon"></a>
+                <a><img src="Grafik/icon_TwitterX.svg" class="icon" alt="x-icon"></a>
+            </some-box>
+        </bottom-box>
+    </footer>   
 </body>
 </html>

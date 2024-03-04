@@ -22,6 +22,10 @@ $main-font: 'Voltaire';
 @mixin btn($bg-color: $quinary-color){
     background-color: $bg-color;
     color: $primary-color;
+    font-family: $link-and-btn-font;
+    font-size: 2vw;
+    padding: 0.2vw 1vw;
     text-decoration: none;
     text-align: center;
+    cursor: pointer;
 }

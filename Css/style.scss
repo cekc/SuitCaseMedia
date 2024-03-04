@@ -6,20 +6,54 @@
     margin: 0px;
     padding: 0px;
 }
+a{
+    cursor: pointer;
+}
+p{
+    font-family: partial.$main-font;
+    color: partial.$quinary-color;
+    line-height: 3vw;
+}
+h2{
+    font-family: partial.$headline-font;
+    font-size: 4vw;
+    color: partial.$quinary-color;
+}
+h3{
+    font-family: partial.$link-and-btn-font;
+    color: partial.$primary-color;
+    font-size: 2vw;
+    display: inline-block;
+    padding: 1vw 0;
+}
 
 /*3.1.general classes*/
 .links{
     font-family: partial.$link-and-btn-font;
-    font-size: 2.8vw;
     color: partial.$primary-color;
     text-decoration: none;
-    &:active{
-        text-transform: uppercase;
-        text-decoration: underline;
+    text-align: center;
+    &:visited{
+        color: partial.$primary-color
     }
-    &:hover{
-        text-transform: uppercase;
-    }
+}
+.icon{
+    width: 2.5vw;
+    height: auto;
+}
+.green{
+    background-color: partial.$secondary-color;
+    width: 100vw;
+}
+.blue{
+    background-color: partial.$tertiery-color;
+    width: 73vw;
+    left: 5vw;
+}
+.orange{
+    background-color: partial.$quaternary-color;
+    width: 48vw;
+    left: 23.5vw;
 }
 /*4.body*/
 body{
@@ -34,34 +68,25 @@ body{
 /*4.1.header over menu*/
 header{
     grid-area: header;
+    overflow: hidden;
 }
-
 .header-boxes{
     display: block;
     position: relative;
 }
 green-box{
-    background-color: partial.$secondary-color;
-    width: auto;
     height: 20vw;
 }
-
 blue-box{
-    background-color: partial.$tertiery-color;
-    width: 73vw;
     height: 80%;
     top: 20%;
-    left: 5vw;
 }
-
 orange-box{
-    background-color: partial.$quaternary-color;
-    width: 48vw;
     height: 80%;
     top: 20%;
-    left: 18.5vw;
-}
+    left: 18.5vw !important;
 
+}
 white-box{
     background-color: partial.$primary-color;
     width: 22.5vw;
@@ -74,6 +99,7 @@ white-box{
         left: 8vw;
     }
 }
+
 /*header menu*/
 nav{
     @include partial.flex($justify: none);
@@ -85,18 +111,36 @@ nav{
     a{
         width: 8vw;
         margin-right: 6vw;
-        text-align: center;
+        font-size: 2.8vw;
+        &:active{
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+        &:hover{
+            text-transform: uppercase;
+        }
     }
 }
+
 /*header under menu*/
-quote-box{
-    background-color: partial.$quaternary-color;
-    font-family: partial.$quote-font;
-    font-size: 2.7vw;
-    position: relative;
-    width: 48vw;
+language-box{  
+    font-size: 2vw !important;
+    position: absolute;
     height: auto;
-    left: 23.5vw;
+    @include partial.flex($justify: end);
+    p{ 
+        font-family: partial.$link-and-btn-font;
+        color: partial.$primary-color;
+        padding: 1vw 0vw;
+        margin-right: 0.8vw;
+    }
+}
+quote-box{
+    font-family: partial.$quote-font !important;
+    font-size: 2.7vw;
+    color: partial.$quinary-color;
+    position: relative;
+    height: auto;
     @include partial.flex($justify: end);
     flex-wrap: wrap;
     q{
@@ -104,37 +148,106 @@ quote-box{
         padding: 2vw 3vw 0 3vw;
     }
     p{
+        font-family: partial.$quote-font !important;
+        font-size: 2.7vw !important;
         margin-right: 1vw;
     }
     z-index: 1;
 }
-language-box{
-    background-color: partial.$tertiery-color;
-    font-family: partial.$link-and-btn-font;
-    color: partial.$primary-color;
-    font-size: 2.8vw;
-    position: relative;
-    width: 73vw;
-    height: auto;
-    left: 5vw;
-    @include partial.flex($justify: end);
-    p{
-        padding: 1vw 0vw;
-        margin-right: 0.5vw;
-    }
-    a{
-        text-decoration: none;
-    }
-    a:visited{
-        color: partial.$primary-color
-    }
-}
+
 /*main*/
 main{
     grid-area: main;
+    overflow: hidden;
 }
 
 /*footer*/
 footer{
     grid-area: footer;
+    overflow: hidden;
+    h2{
+        display: inline;
+        position: relative;
+        left: 17vw;
+        bottom: 10vw;
+    }
+}
+.person-grafik{
+    width: 13vw;
+    height: auto;
+    position: relative;
+    top: 5.5vw;
+    left: 8vw;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+contact-box{
+    display: block;
+    position: relative;
+    height: auto;
+    @include partial.flex($justify: flex-start);
+    *{
+        display: inline-block;
+    }
+    h3{
+        color: partial.$quinary-color;
+        margin: 0 1vw;
+    }
+    div{
+        @include partial.flex();
+        margin: 0 1vw;
+        p{
+            font-family: partial.$link-and-btn-font;
+            font-size: 2vw;
+            font-weight: 700;
+        }
+    }
+}
+newsletter-box{
+    font-family: partial.$main-font;
+    display: block;
+    position: relative;
+    height: auto;
+    @include partial.flex($justify: end);
+    form{
+        h3{
+            margin-left: 1vw;
+        }
+        .lab-hidden{
+            display: block;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+        }
+        #newsletter-text{
+            font-family: partial.$link-and-btn-font;
+            font-size: 2vw;
+            width: 25vw;
+            height: auto;
+            margin: 0 1vw 1vw 1vw;
+            padding: 0.2vw;
+            border: none;
+        }
+        #submit-button{
+            @include partial.btn();
+            border: none;
+            margin-right: 1vw;
+        }
+    }
+}
+bottom-box{
+    height: auto;
+    @include partial.flex($justify: space-between);
+    p{
+        font-size: 1vw;
+        color: partial.$primary-color;
+        margin-left: 2vw;
+    }  
+    some-box{
+        width: 17vw;
+        margin-right: 2.5vw;
+        @include partial.flex($justify: space-between);
+    }
 }

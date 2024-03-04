@@ -8,19 +8,61 @@
   padding: 0px;
 }
 
+a {
+  cursor: pointer;
+}
+
+p {
+  font-family: "Voltaire";
+  color: #4B330F;
+  line-height: 3vw;
+}
+
+h2 {
+  font-family: "Big Shoulders Inline Text";
+  font-size: 4vw;
+  color: #4B330F;
+}
+
+h3 {
+  font-family: "Big Shoulders Display";
+  color: white;
+  font-size: 2vw;
+  display: inline-block;
+  padding: 1vw 0;
+}
+
 /*3.1.general classes*/
 .links {
   font-family: "Big Shoulders Display";
-  font-size: 2.8vw;
   color: white;
   text-decoration: none;
+  text-align: center;
 }
-.links:active {
-  text-transform: uppercase;
-  text-decoration: underline;
+.links:visited {
+  color: white;
 }
-.links:hover {
-  text-transform: uppercase;
+
+.icon {
+  width: 2.5vw;
+  height: auto;
+}
+
+.green {
+  background-color: #3E8F22;
+  width: 100vw;
+}
+
+.blue {
+  background-color: #67AEB3;
+  width: 73vw;
+  left: 5vw;
+}
+
+.orange {
+  background-color: #FFA800;
+  width: 48vw;
+  left: 23.5vw;
 }
 
 /*4.body*/
@@ -33,6 +75,7 @@ body {
 /*4.1.header over menu*/
 header {
   grid-area: header;
+  overflow: hidden;
 }
 
 .header-boxes {
@@ -41,25 +84,18 @@ header {
 }
 
 green-box {
-  background-color: #3E8F22;
-  width: auto;
   height: 20vw;
 }
 
 blue-box {
-  background-color: #67AEB3;
-  width: 73vw;
   height: 80%;
   top: 20%;
-  left: 5vw;
 }
 
 orange-box {
-  background-color: #FFA800;
-  width: 48vw;
   height: 80%;
   top: 20%;
-  left: 18.5vw;
+  left: 18.5vw !important;
 }
 
 white-box {
@@ -89,18 +125,38 @@ nav {
 nav a {
   width: 8vw;
   margin-right: 6vw;
-  text-align: center;
+  font-size: 2.8vw;
+}
+nav a:active {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+nav a:hover {
+  text-transform: uppercase;
 }
 
 /*header under menu*/
-quote-box {
-  background-color: #FFA800;
-  font-family: "Just Me Again Down Here";
-  font-size: 2.7vw;
-  position: relative;
-  width: 48vw;
+language-box {
+  font-size: 2vw !important;
+  position: absolute;
   height: auto;
-  left: 23.5vw;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+language-box p {
+  font-family: "Big Shoulders Display";
+  color: white;
+  padding: 1vw 0vw;
+  margin-right: 0.8vw;
+}
+
+quote-box {
+  font-family: "Just Me Again Down Here" !important;
+  font-size: 2.7vw;
+  color: #4B330F;
+  position: relative;
+  height: auto;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -112,39 +168,122 @@ quote-box q {
   padding: 2vw 3vw 0 3vw;
 }
 quote-box p {
+  font-family: "Just Me Again Down Here" !important;
+  font-size: 2.7vw !important;
   margin-right: 1vw;
-}
-
-language-box {
-  background-color: #67AEB3;
-  font-family: "Big Shoulders Display";
-  color: white;
-  font-size: 2.8vw;
-  position: relative;
-  width: 73vw;
-  height: auto;
-  left: 5vw;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-language-box p {
-  padding: 1vw 0vw;
-  margin-right: 0.5vw;
-}
-language-box a {
-  text-decoration: none;
-}
-language-box a:visited {
-  color: white;
 }
 
 /*main*/
 main {
   grid-area: main;
+  overflow: hidden;
 }
 
 /*footer*/
 footer {
   grid-area: footer;
+  overflow: hidden;
+}
+footer h2 {
+  display: inline;
+  position: relative;
+  left: 17vw;
+  bottom: 10vw;
+}
+
+.person-grafik {
+  width: 13vw;
+  height: auto;
+  position: relative;
+  top: 5.5vw;
+  left: 8vw;
+  transform: scaleX(-1);
+}
+
+contact-box {
+  display: block;
+  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+contact-box * {
+  display: inline-block;
+}
+contact-box h3 {
+  color: #4B330F;
+  margin: 0 1vw;
+}
+contact-box div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1vw;
+}
+contact-box div p {
+  font-family: "Big Shoulders Display";
+  font-size: 2vw;
+  font-weight: 700;
+}
+
+newsletter-box {
+  font-family: "Voltaire";
+  display: block;
+  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+newsletter-box form h3 {
+  margin-left: 1vw;
+}
+newsletter-box form .lab-hidden {
+  display: block;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+}
+newsletter-box form #newsletter-text {
+  font-family: "Big Shoulders Display";
+  font-size: 2vw;
+  width: 25vw;
+  height: auto;
+  margin: 0 1vw 1vw 1vw;
+  padding: 0.2vw;
+  border: none;
+}
+newsletter-box form #submit-button {
+  background-color: #4B330F;
+  color: white;
+  font-family: "Big Shoulders Display";
+  font-size: 2vw;
+  padding: 0.2vw 1vw;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  margin-right: 1vw;
+}
+
+bottom-box {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+bottom-box p {
+  font-size: 1vw;
+  color: white;
+  margin-left: 2vw;
+}
+bottom-box some-box {
+  width: 17vw;
+  margin-right: 2.5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
