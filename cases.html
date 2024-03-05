@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <!--import af fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--voltaire-->
+    <link href="https://fonts.googleapis.com/css2?family=Voltaire&display=swap" rel="stylesheet">
+    <!--big shoulders display-->
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
+    <!--big shoulders inline text-->
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100..900&display=swap" rel="stylesheet">
+    <!--just me again down here-->
+    <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
+    <title>forside</title>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--logo og grafik-->
+        <green-box class="green header-boxes">
+            <blue-box class="blue header-boxes">
+                <orange-box class="orange header-boxes">
+                    <white-box class="header-boxes"> 
+                        <img src="Grafik/grafik_logo.svg" alt="logo">
+                    </white-box> 
+                </orange-box>
+            </blue-box>
+        </green-box>     
+    <!--navigation-->     
+        <nav>
+            <a class="links" href="index.html">forside</a>
+            <a class="links" href="cases.html">cases</a>
+            <a class="links" href="#">produkter</a>
+            <a class="links" href="#">om os</a>
+        </nav>
+    <!--sprogvalg og citat-->
+        <language-box class="blue">
+            <a class="links" href="#"><p>da</p></a>
+            <p>|</p>
+            <a class="links" href="#"><p>en</p></a>
+        </language-box>
+        <quote-box class="orange">
+            <q>“The best way to predict the future is to create it.”</q>
+            <p aria-label="citat forfatter">- Abraham Lincoln</p>
+        </quote-box>       
+    </header>
+    <main>
+        <section class="bg-white column-1">
+            <h1>HER KAN DU SE VORES ARBEJDE</h1>
+            <p>Dyk ned i vores cases og opdag, hvordan vi med vores dristige tilgang til branding, vores legesyge grafiske design og vores markedsføringsstrategier har formået at influere og inspirere målgrupper inden for rejse og oplevelsessektoren. Fra fortryllende kampagner, der trækker folk ind i nye verdener, til forfriskende designs, der fanger øjet og vækker nysgerrigheden, er vores cases et sandt eventyr for sanserne.</p>
+        </section>
+        <section class="bg-grey column-3">
+            <h2>VORES SENESTE ARBEJDE</h2>
+            <div>
+                <a href=""><img src="Img/img_byens_burger.svg" alt="billede byens burger"></a>
+                <a href=""><img src="Img/img_connies_casserole.svg" alt="billede connies caserole"></a>
+                <a href=""><img src="Img/img_pizza_vesuvio.svg" alt="billede pizza vesuvio"></a>
+            </div>
+        </section>
+        <section class="bg-blue column-3">
+            <h2 style="color: white;">OG HVAD VI ELLERS HAR LAVET...</h2>         
+            <div>
+                <a href=""><img src="Img/img_go_travel.svg" alt="billedlink go travel"></a>
+                <a href=""><img src="Img/img_rock_u.svg" alt="billedlink"></a>
+                <a href=""><img src="Img/img_sonjas_sushi.svg" alt="billedlink"></a>
+            </div>
+            <div>
+                <a href=""><img src="Img/img_byens_burger.svg" alt="billedlink byens burger"></a>
+                <a href=""><img src="Img/img_connies_casserole.svg" alt="billedlink connies caserole"></a>
+                <a href=""><img src="Img/img_pizza_vesuvio.svg" alt="billedlink pizza vesuvio"></a>
+            </div>
+        </section>
+    </main>
+    <!--footer-->
+    <footer>               
+        <img class="person-grafik" src="Grafik/grafik_anna_karakter.svg" alt="pyntegrafik">
+        <h2>HVIS DU VIL HØRE MERE...</h2>
+        <!--kontaktinfo-->
+        <contact-box class="orange">
+            <h3>KONTAKT OS</h3>
+            <div>
+                <img src="Grafik/icon_call.svg" class="icon" alt="telefonnummer">
+                <p>10 29 38 47</p>
+            </div>
+            <div>
+                <img src="Grafik/icon_mail.svg" class="icon" alt="email">
+                <p>scmkontakt@suitcasemedia.dk</p>
+            </div>
+        </contact-box>
+        <!--tilmelding til nyhedsbrev-->
+        <newsletter-box class="blue">          
+            <form action="">
+                <h3>TILMELD VORES NYHEDSBREV</h3>
+                <label for="newsletter-text" class="lab-hidden">E-mail</label>
+                <input type="email" id="newsletter-text" placeholder="E-mail">
+                <input type="submit" id="submit-button" value="TILMELD">
+            </form>
+        </newsletter-box>
+        <!--bundbanner med cvr og SoMe-->
+        <bottom-box class="green">
+            <p>CVR 1029384756</p>
+            <some-box>
+                <h3>FØLG OS</h3>
+                <a><img src="Grafik/icon_LinkedIn.svg" class="icon" alt="linkedin-icon"></a>
+                <a><img src="Grafik/icon_Facebook.svg" class="icon" alt="facebook-icon"></a>
+                <a><img src="Grafik/icon_Instagram.svg" class="icon" alt="instagram-icon"></a>
+                <a><img src="Grafik/icon_TwitterX.svg" class="icon" alt="x-icon"></a>
+            </some-box>
+        </bottom-box>
+    </footer>   
+</body>
+</html>

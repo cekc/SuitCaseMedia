@@ -6,10 +6,12 @@ $secondary-color: #3E8F22;
 $tertiery-color: #67AEB3;
 $quaternary-color: #FFA800;
 $quinary-color: #4B330F;
+$Senary-color: #F3F3F3;
 $link-and-btn-font: 'Big Shoulders Display';
 $headline-font: 'Big Shoulders Inline Text';
 $quote-font: 'Just Me Again Down Here';
 $main-font: 'Voltaire';
+$padding-sec: 10vw 0 0 0;
 
 
 /*2.mixin-partial*/
@@ -28,4 +30,5 @@ $main-font: 'Voltaire';
     text-decoration: none;
     text-align: center;
     cursor: pointer;
+    border: none;
 }

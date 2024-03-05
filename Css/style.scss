@@ -12,7 +12,13 @@ a{
 p{
     font-family: partial.$main-font;
     color: partial.$quinary-color;
+    font-size: 2vw;
     line-height: 3vw;
+}
+h1{
+    font-family: partial.$headline-font;
+    font-size: 6vw;
+    color: partial.$quinary-color;
 }
 h2{
     font-family: partial.$headline-font;
@@ -28,19 +34,6 @@ h3{
 }
 
 /*3.1.general classes*/
-.links{
-    font-family: partial.$link-and-btn-font;
-    color: partial.$primary-color;
-    text-decoration: none;
-    text-align: center;
-    &:visited{
-        color: partial.$primary-color
-    }
-}
-.icon{
-    width: 2.5vw;
-    height: auto;
-}
 .green{
     background-color: partial.$secondary-color;
     width: 100vw;
@@ -55,6 +48,38 @@ h3{
     width: 48vw;
     left: 23.5vw;
 }
+.bg-white{
+    background-color: partial.$primary-color;
+}
+.bg-grey{
+    background-color: partial.$Senary-color;
+}
+.bg-blue{
+    background-color: partial.$tertiery-color;
+}
+.links{
+    font-family: partial.$link-and-btn-font;
+    color: partial.$primary-color;
+    text-decoration: none;
+    text-align: center;
+    &:visited{
+        color: partial.$primary-color
+    }
+}
+.btn-main{
+    @include partial.btn();
+    font-size: 3vw;
+    &:hover{
+        background-color: partial.$primary-color;
+        color: partial.$quinary-color;
+        transition: 0.5s ease-in-out;
+    }
+}
+.icon{
+    width: 2.5vw;
+    height: auto;
+}
+
 /*4.body*/
 body{
     display: grid;
@@ -124,12 +149,12 @@ nav{
 
 /*header under menu*/
 language-box{  
-    font-size: 2vw !important;
     position: absolute;
     height: auto;
     @include partial.flex($justify: end);
     p{ 
         font-family: partial.$link-and-btn-font;
+        font-size: 2vw !important;
         color: partial.$primary-color;
         padding: 1vw 0vw;
         margin-right: 0.8vw;
@@ -159,8 +184,54 @@ quote-box{
 main{
     grid-area: main;
     overflow: hidden;
+    
 }
-
+.column-1{
+    padding: 5vw 0 5vw 0;
+    @include partial.flex();
+    flex-direction: column;
+    p{
+        padding: 5vw 20vw;
+    }
+}
+.sec-video{
+    width: 100vw;
+    video{
+        width: 100vw;
+        height: auto;
+    }
+}
+.column-2{
+    padding: 5vw 0 5vw 0;
+    @include partial.flex();
+    flex-direction: column;
+    div{
+        @include partial.flex();
+        flex-direction: row;
+        padding: 2.5vw 20vw;
+        p{
+            margin-right: 5vw;
+        }
+        img{
+            width: 15vw;
+            height: auto;
+        } 
+    }
+}
+.column-3{
+    padding: 5vw 0;
+    @include partial.flex();
+    flex-direction: column;
+    div{
+        width: 70vw;
+        margin: 5vw 0;
+        @include partial.flex($justify: space-around);
+        img{
+            width: 20vw;
+            height: auto;
+        }
+    }
+}
 /*footer*/
 footer{
     grid-area: footer;
@@ -232,7 +303,6 @@ newsletter-box{
         }
         #submit-button{
             @include partial.btn();
-            border: none;
             margin-right: 1vw;
         }
     }
