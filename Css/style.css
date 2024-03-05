@@ -22,18 +22,15 @@ p {
 h1 {
   font-family: "Big Shoulders Inline Text";
   font-size: 6vw;
-  color: #4B330F;
 }
 
 h2 {
   font-family: "Big Shoulders Inline Text";
   font-size: 4vw;
-  color: #4B330F;
 }
 
 h3 {
   font-family: "Big Shoulders Display";
-  color: white;
   font-size: 2vw;
   display: inline-block;
   padding: 1vw 0;
@@ -67,6 +64,14 @@ h3 {
 
 .bg-blue {
   background-color: #67AEB3;
+}
+
+.font-white {
+  color: white;
+}
+
+.font-brown {
+  color: #4B330F;
 }
 
 .links {
@@ -225,6 +230,12 @@ main {
 }
 .column-1 p {
   padding: 5vw 20vw;
+}
+.column-1 div img {
+  width: 20vw;
+  height: auto;
+  float: left;
+  margin: 0 2vw 2vw 0;
 }
 
 .sec-video {

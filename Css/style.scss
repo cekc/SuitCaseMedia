@@ -18,16 +18,13 @@ p{
 h1{
     font-family: partial.$headline-font;
     font-size: 6vw;
-    color: partial.$quinary-color;
 }
 h2{
     font-family: partial.$headline-font;
     font-size: 4vw;
-    color: partial.$quinary-color;
 }
 h3{
     font-family: partial.$link-and-btn-font;
-    color: partial.$primary-color;
     font-size: 2vw;
     display: inline-block;
     padding: 1vw 0;
@@ -56,6 +53,12 @@ h3{
 }
 .bg-blue{
     background-color: partial.$tertiery-color;
+}
+.font-white{
+    color: partial.$primary-color;
+}
+.font-brown{
+    color: partial.$quinary-color;
 }
 .links{
     font-family: partial.$link-and-btn-font;
@@ -192,6 +195,14 @@ main{
     flex-direction: column;
     p{
         padding: 5vw 20vw;
+    }
+    div{
+        img{
+            width: 20vw;
+            height: auto;
+            float: left;
+            margin: 0 2vw 2vw 0;
+        }
     }
 }
 .sec-video{
