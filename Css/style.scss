@@ -18,6 +18,8 @@ p{
 h1{
     font-family: partial.$headline-font;
     font-size: 6vw;
+    text-align: center;
+    padding: 0 10VW;
 }
 h2{
     font-family: partial.$headline-font;
@@ -28,6 +30,14 @@ h3{
     font-size: 2vw;
     display: inline-block;
     padding: 1vw 0;
+}
+h4{
+    font-family: partial.$link-and-btn-font;
+    font-size: 1.8vw;
+}
+h5{
+    font-family: partial.$link-and-btn-font;
+    font-size: 1.5vw;
 }
 
 /*3.1.general classes*/
@@ -68,6 +78,7 @@ h3{
     &:visited{
         color: partial.$primary-color
     }
+    
 }
 .btn-main{
     @include partial.btn();
@@ -179,6 +190,7 @@ quote-box{
         font-family: partial.$quote-font !important;
         font-size: 2.7vw !important;
         margin-right: 1vw;
+        padding-bottom: 1vw;
     }
     z-index: 1;
 }
@@ -240,6 +252,17 @@ main{
         img{
             width: 20vw;
             height: auto;
+        }
+    }
+    staff-units{
+        width: 80vw;
+        height: auto;
+        @include partial.flex($align: flex-start);
+        flex-direction: row;
+        div{
+            @include partial.flex();
+            flex-direction: column;
+            padding: 1vw 2vw;
         }
     }
 }
