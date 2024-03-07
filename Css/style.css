@@ -121,6 +121,7 @@ h5 {
 
 /*4.body*/
 body {
+  background-color: white;
   display: grid;
   grid-template-areas: "header" "main" "footer";
   grid-template-rows: auto auto auto;
@@ -165,7 +166,7 @@ white-box img {
   left: 8vw;
 }
 
-/*header menu*/
+/*4.2.header menu*/
 nav {
   display: flex;
   justify-content: none;
@@ -177,9 +178,9 @@ nav {
   padding-left: 22.5vw;
 }
 nav a {
+  font-size: 2.8vw;
   width: 8vw;
   margin-right: 6vw;
-  font-size: 2.8vw;
 }
 nav a:active {
   text-transform: uppercase;
@@ -189,7 +190,7 @@ nav a:hover {
   text-transform: uppercase;
 }
 
-/*header under menu*/
+/*4.3.header under menu*/
 language-box {
   position: absolute;
   height: auto;
@@ -228,7 +229,7 @@ quote-box p {
   padding-bottom: 1vw;
 }
 
-/*main*/
+/*5.main*/
 main {
   grid-area: main;
   overflow: hidden;
@@ -313,9 +314,13 @@ main {
   align-items: center;
   flex-direction: column;
   padding: 1vw 2vw;
+  border-right: 0.2vw solid #4B330F;
+}
+.column-3 staff-units div:nth-of-type(3) {
+  border-right: none;
 }
 
-/*footer*/
+/*6.footer*/
 footer {
   grid-area: footer;
   overflow: hidden;
@@ -422,4 +427,54 @@ bottom-box some-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*7.tablet*/
+@media only screen and (max-width: 1024px) {
+  p {
+    font-size: 3vw;
+  }
+  h1 {
+    font-size: 7vw;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+  h3 {
+    font-size: 3vw;
+  }
+  h4 {
+    font-size: 3vw;
+  }
+  h5 {
+    font-size: 2.5vw;
+  }
+  .blue {
+    width: 80vw;
+  }
+  .orange {
+    width: 55vw;
+  }
+  nav {
+    height: 5vw;
+    padding-left: 23vw;
+  }
+  nav a {
+    font-size: 3.8vw;
+    margin-right: 8vw;
+  }
+  .column-3 staff-units div p {
+    font-size: 2vw !important;
+  }
+  language-box p {
+    font-size: 3vw !important;
+    margin-right: 0.4vw;
+  }
+  .person-grafik {
+    top: 7vw;
+  }
+  bottom-box some-box {
+    width: 25vw;
+  }
+}
+/*8.mobil*//*# sourceMappingURL=style.css.map */
